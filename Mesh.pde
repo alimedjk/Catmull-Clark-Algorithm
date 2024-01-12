@@ -100,9 +100,7 @@ void catmullClarkSubdivision() {
       System.arraycopy(save1,0,newFace2,0,save1.length);
       int[] save2 = {c, edgePointCA, facePointIndex, edgePointBC};
       System.arraycopy(save2,0,newFace3,0,save2.length);
-      //newFace1 = {a, edgePointAB, facePointIndex, edgePointCA};
-      //newFace2 = {b, edgePointBC, facePointIndex, edgePointAB};
-      //newFace3 = {c, edgePointCA, facePointIndex, edgePointBC};
+
     }else{
       int[] save3 = {a, edgePointAB, facePointIndex, edgePointDA};
       System.arraycopy(save3,0,newFace1,0,save3.length);
@@ -112,10 +110,7 @@ void catmullClarkSubdivision() {
       System.arraycopy(save5,0,newFace3,0,save5.length);
       int[] save6 = {d, edgePointDA, facePointIndex, edgePointCD};
       System.arraycopy(save6,0,newFace4,0,save6.length);
-      //newFace1 = {a, edgePointAB, facePointIndex, edgePointDA};
-      //newFace2 = {b, edgePointBC, facePointIndex, edgePointAB};
-      //newFace3 = {c, edgePointCD, facePointIndex, edgePointBC};
-      //newFace4 = {d, edgePointDA, facePointIndex, edgePointCD};
+
     }
 
     newFaces.add(newFace1);
